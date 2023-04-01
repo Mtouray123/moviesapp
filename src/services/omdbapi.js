@@ -5,6 +5,7 @@ export const getMovie = async (searchTerm) => {
             `https://www.omdbapi.com/?apikey=2c22418&t=${searchTerm}`
         );
             const data = await response.json();
+            console.log(data)
             return data
     }   catch (e) {
         console.error(e);
